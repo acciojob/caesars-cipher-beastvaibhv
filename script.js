@@ -36,10 +36,10 @@ function rot13(encodedStr) {
   // Only change code below this line
 	for(let char of encodedStr){
 		if(char >='A' && char <='a'){
-			decodeArr.push(lookup.char);
+			decodedArr.push(lookup.char);
 		}
 		else{
-			decodeArr.push(char);
+			decodedArr.push(char);
 		}
 	}
 	
