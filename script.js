@@ -35,8 +35,13 @@ function rot13(encodedStr) {
   let decodedArr = []; // Your Result goes here
   // Only change code below this line
 	for(let chr of encodedStr){
-		
+		if(chr >="A" && chr <="Z"){
 			decodedArr.push(lookup[chr]);
+		}
+		else{
+			decodedArr.push(chr);
+		}
+			
 	}
 	
 
